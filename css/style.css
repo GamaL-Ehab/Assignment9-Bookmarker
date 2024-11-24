@@ -1,0 +1,67 @@
+body{
+    background-color: #F7ECDE; 
+}
+*::selection{
+    background-color: #FEC260; 
+}
+.sans-font{
+    font-family:  "PT Sans Caption", sans-serif;
+}
+.header-font{
+    font-family:  "Pacifico", cursive;
+}
+.second-font{
+    font-family:  "Righteous", sans-serif;
+}
+h1{
+    position: relative;
+    font-size: 3.2rem;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 30%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: height 0.5s;
+}
+h1:hover::after{
+    height: 60%;
+}
+.form{
+    border: black dotted 2px;
+    border-right: 0;
+    border-left: 0;
+}
+h2{
+    font-family:  "Righteous", sans-serif;
+    font-size: 1.7rem;
+    background-image: linear-gradient(90deg , green, yellow);
+    background-clip: text;
+    color: transparent;   
+}
+label{
+    display: block;
+    text-align: left;
+}
+.submit-btn{
+    background-color: #D1512D;
+    color: white;
+    padding: 0.5rem 3rem;
+    border: none;
+    transition: all 0.3s;
+}
+.submit-btn:hover{
+    background-color: #BB4120;
+}
+.form-control:focus{
+    border-color: #BB4120;
+    box-shadow: 0 0 0 .2rem rgba(235, 143, 30, 0.247);
+}
+.circle{
+    width: 20px;
+    height: 20px;
+}
